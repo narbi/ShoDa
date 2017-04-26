@@ -1,3 +1,5 @@
+#!/usr/bin/python
+# pip install censys
 import censys.data
 import sys
 import json
