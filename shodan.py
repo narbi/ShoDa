@@ -1,3 +1,5 @@
+#!/usr/bin/python
+# pip install shodan
 import shodan
 
 SHODAN_API_KEY = "T9NuuJ24Fhj4UC8hZ94w8EtSv4f7XkWg"
@@ -30,11 +32,11 @@ for protocol in protocols:
     query= protocol
     results = api.count(query, facets=FACETS)
     # Show the results
-    print 'Total Results for %s: %s \n' % (protocol, results['total'])
+    print ('Total Results for %s: %s \n' % (protocol, results['total']))
     for result in results['matches']:
-      print FACET_TITLES[facet]
+      print (FACET_TITLES[facet])
     for term in result['facets'][facet]:
-      print '%s: %s' % (term['value'], term['count'])
-    print ''
-  except shodan.APIError, e:
-    print 'Error: %s' % e
+      print ('%s: %s' % (term['value'], term['count']))
+    print ('-------------------------------------')
+  except shodan.APIError:
+    print ('Error: %s' % e)
