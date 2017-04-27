@@ -16,4 +16,4 @@ ssh_series = c.view_series('22-ssh-banner-full_ipv4')
 
 # View all the files in each scan
 for scan in ssh_series['results']['historical']:
-    print c.view_result('22-ssh-banner-full_ipv4', scan['id'])
+    print (c.view_result('22-ssh-banner-full_ipv4', scan['id']))
