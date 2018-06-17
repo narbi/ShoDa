@@ -6,7 +6,7 @@ It will query for the most vulnerable protocol of each level:
 LEVEL1: MODBUS
 LEVEL2: DNP3
 LEVEL3: ISC 61850
-LEVEL4: FTP/SFTP για SCADA
+LEVEL4: FTP/SFTP for SCADA
 
 and  for each level it will find the latest version to conclude for the rest.
 
